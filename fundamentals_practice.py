@@ -1,4 +1,4 @@
-#print("Hello World")
+print("Hello World")
 # prints hello world
 
 # STEP 1
@@ -12,6 +12,7 @@ jersey_number = "23" # declared jersey num
 car_name = "Honda"
 x = 50
 first_name = "Kristy"
+
 print(first_name)
 print(type(name))
 print(type(age))
