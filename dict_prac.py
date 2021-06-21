@@ -37,3 +37,48 @@ shoe_inv = {"Jordan 13":1,
             "Foamposite":10,
             "Air Max":5,
             "SB Dunk":20}
+
+   # LAB 4 
+# EXAMPLE
+def triangle_area( base, height):
+
+    area = 1/2 * base * height
+    return area
+
+print(triangle_area(3, 4))
+
+def total_price(food_1, food_2):
+
+    total = food_prices[food_1] + food_prices[food_2]
+    
+    return total
+
+print(total_price("Beef", "Cheese"))
+
+def price_diff(food_1, food_2):
+
+    total = food_prices[food_1] - food_prices[food_2]
+    
+    if total < 0:
+        
+        return "Price cannot be less than 0."
+    
+    else:
+        
+        return total
+
+print(price_diff("Beef", "Cheese"))
+
+# STEP 4
+shoe_inv = {"Jordan 13": 1, "Yeezy": 1, "Foamposite": 10, "Air Max": 5, "SB Dunk": 20}
+
+def restock(shoe_name, multiplier):
+    newInv = shoe_inv[shoe_name] * multiplier
+    shoe_inv[shoe_name] = newInv
+    return shoe_inv
+
+
+def clearance_sale(shoe_name, discount):
+    salePrice = shoe_inv[shoe_name] / discount
+    shoe_inv[shoe_name] = salePrice
+    return shoe_inv
